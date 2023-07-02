@@ -1,0 +1,109 @@
+/*footer*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #c2c9cc;
+    padding: 6px;
+    margin-top: 6%;
+  
+  }
+  .grid-item {
+    /*background-color: rgba(236, 236, 236, 0.8);*/
+    padding: 6px;
+    font-size: 16px;
+    text-align: center;
+  }
+    
+  /* formulario */
+  * {
+    box-sizing: border-box;
+  
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    resize: vertical;
+  }
+
+  .enviar{
+    width: 35% !important;
+  }
+
+  label {
+    padding: 9px 9px 9px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color:#1c8fe7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color:  rgba(1, 135, 253, 0.369);
+  }
+  
+  .container_footer {
+    border-radius: 50px;
+    background-color: #c2c6c9;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 60%;
+    margin-top: 6px;
+  }
+  
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row_enviar{
+    display: flex;
+    justify-content: end;
+    margin-left: 5rem;
+  }
+
+  ul {
+    list-style: none;
+}
+
+  
+  @media (max-width: 850px) {
+
+    .logo_footer{
+      display: none;
+    }
+
+  .grid-container {
+    grid-template-columns: none;
+  }
+
+    .grid-item:nth-child(2){
+      grid-row-start: 1;
+    }
+    }
+  
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+
+  }

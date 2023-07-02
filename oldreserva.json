@@ -1,0 +1,115 @@
+[
+    {
+        "section": "Argentina",
+        "imagen":"bariloche.jpg",
+        "cant_dias":"8dias - 6noches",
+        "precio":"$70000",
+        "ciudad":"Bariloche"
+    }, 
+    {
+        "section": "Argentina",
+        "imagen":"cataratas-misiones.jpg",
+        "cant_dias":"5dias - 4noches",
+        "precio":"$50000",
+        "ciudad":"Cataratas"
+    }, 
+    {
+        "section": "Argentina",
+        "imagen":"mendoza.jpg",
+        "cant_dias":"8dias - 6noches",
+        "precio":"$55000",
+        "ciudad":"Mendoza"
+    }, 
+    {
+        "section": "Argentina",
+        "imagen":"Villa general belgrano - córdoba.jpg",
+        "cant_dias":"10dias - 8noches",
+        "precio":"$60000",
+        "ciudad":"Cordoba"
+    }, 
+    {
+        "section": "Asia",
+        "imagen":"Bangkok.jpg",
+        "cant_dias":"10dias - 7noches",
+        "precio":"u$d3000",
+        "ciudad":"Bangkok"
+    }, 
+    {
+        "section": "Asia",
+        "imagen":"Tokio.jpg",
+        "cant_dias":"9dias - 6noches",
+        "precio":"u$d3200",
+        "ciudad":"Tokio"
+    }, 
+    {
+        "section": "Asia",
+        "imagen":"Estambul.jpeg",
+        "cant_dias":"8dias - 6noches",
+        "precio":"u$d2800",
+        "ciudad":"Estambul"
+    }, 
+    {
+        "section": "Asia",
+        "imagen":"India.jpg",
+        "cant_dias":"10dias - 8noches",
+        "precio":"u$d2600",
+        "ciudad":"India"
+    }, 
+    {
+        "section": "Europa",
+        "imagen":"Amsterdan.jpg",
+        "cant_dias":"10 días - 8 noches",
+        "precio":"u$d 3000",
+        "ciudad":"Amsterdam"
+    }, 
+    {
+        "section": "Europa",
+        "imagen":"Benidorm.jpg",
+        "cant_dias":"7 días - 5 noches",
+        "precio":"u$d 2800",
+        "ciudad":"Benidorm"
+    }, 
+    {
+        "section": "Europa",
+        "imagen":"Londres.jpg",
+        "cant_dias":"6 dias - 4 noches",
+        "precio":"u$d 3000",
+        "ciudad":"Londres"
+    }, 
+    {
+        "section": "Europa",
+        "imagen":"paris.jpg",
+        "cant_dias":"8 dias - 6 noches",
+        "precio":"u$d 3300",
+        "ciudad":"Paris"
+    }, 
+    {
+        "section": "America",
+        "imagen":"cancun.jpg",
+        "cant_dias":"10 días - 8 noches",
+        "precio":"u$d 2000",
+        "ciudad":"Cancun"
+    }, 
+    {
+        "section": "America",
+        "imagen":"Miami-Florida.jpg",
+        "cant_dias":"7 días - 6 noches",
+        "precio":"u$d 2300",
+        "ciudad":"Miami - Florida"
+    }, 
+    {
+        "section": "America",
+        "imagen":"puntaCana.jpg",
+        "cant_dias":"8 dias - 6 noches",
+        "precio":"u$d 3000",
+        "ciudad":"Punta Cana"
+    }, 
+    {
+        "section": "America",
+        "imagen":"RioDeJaneiro.jpg",
+        "cant_dias":"8 dias - 7 noches",
+        "precio":"u$d 1600",
+        "ciudad":"Rio de Janeiro"
+    }
+    
+]

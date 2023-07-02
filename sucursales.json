@@ -1,0 +1,50 @@
+ [
+        {
+            "localidad": "Villa Devoto - CABA ",
+            "direccion": "Fco Beiro 4800 - CABA",
+            "link_maps": "https://goo.gl/maps/GN6foTv3GJDNtwgFA?coh=178571&entry=tt",
+            "horario": "lunes a viernes 9 a 18hs // Sabados 9 a 13hs",
+            "telefono": "011-56658877",
+            "iframe":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13134.968155252795!2d-58.518334!3d-34.610684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d0c18122cf%3A0x16e318de5f9e91fa!2sAv.%20Francisco%20Beir%C3%B3%204800%2C%20C1419HZW%20CABA!5e0!3m2!1ses!2sar!4v1684417538216!5m2!1ses!2sar"
+        }, 
+        {
+            "localidad": "La Plata - Buenos Aires",
+            "direccion": "Av. 7 993, La Plata, Provincia de Buenos Aires",
+            "link_maps": "https://goo.gl/maps/bDBNHceK8WazHwAb8?coh=178571&entry=tt",
+            "horario": "lunes a viernes 9 a 18hs // Sabados 9 a 13hs",
+            "telefono": "0221-1556658877",
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.608760894191!2d-57.95077722498613!3d-34.91626657407056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e63af99d46d5%3A0x7a9e8d91a078bade!2sLaboratorio%20de%20Analisis%20Clinicos%20Bacteri!5e0!3m2!1sen!2sar!4v1684417378110!5m2!1sen!2sar"
+        }, 
+        {
+            "localidad": "Mar del Plata - Buenos Aires",
+            "direccion": "Magallanes 3073, B7603 Mar del Plata, Provincia de Buenos Aires",
+            "link_maps": "https://goo.gl/maps/tUxR9rxx5GEZ1mCRA?coh=178571&entry=tt",
+            "horario": "lunes a viernes 9 a 18hs // Sabados 9 a 13hs",
+            "telefono": "0223-66889975",
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.0887485456856!2d-57.54979702392858!3d-38.04501838521056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dddda46899ed%3A0xd8d8fa63a0740f3e!2sGVA%2C%20Magallanes%203073%2C%20B7603%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1684417778859!5m2!1sen!2sar"
+        },
+        {
+            "localidad": "Carlos Paz - Cordoba ",
+            "direccion": "Liniers 50 - Carlos Paz - Cordoba",
+            "link_maps": "https://goo.gl/maps/gmCrT6uMLmL1ayaz8?coh=178571&entry=tt",
+            "horario": "lunes a viernes 9 a 18hs // Sabados 9 a 13hs",
+            "telefono": "3541-123456",
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.885750500974!2d-64.49920626803939!3d-31.41727370789603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d664254ec566b%3A0x3e1c630d428a80ec!2sLiniers%2050%2C%20X5152%20Villa%20Carlos%20Paz%2C%20C%C3%B3rdoba!5e0!3m2!1sen!2sar!4v1683066682286!5m2!1sen!2sar"
+        },
+        {
+            "localidad": "Mendoza - Mendoza",
+            "direccion": "Av. Sarmiento 720 - Mendoza",
+            "link_maps": "https://goo.gl/maps/ygogQiMxvx2Jihuk9?coh=178571&entry=tt",
+            "horario": "lunes a viernes 9 a 18hs // Sabados 9 a 13hs",
+            "telefono": "0261-632145",
+            "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.3409743744483!2d-68.85355131761517!3d-32.88915200559019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e090491767c0b%3A0x24b0ce4f1d6be86b!2sAv.%20Sarmiento%20720%2C%20M5500%20Capital%2C%20Mendoza!5e0!3m2!1sen!2sar!4v1683066754202!5m2!1sen!2sar"
+        },
+        {
+            "localidad": "Rosario - Santa Fe",
+            "direccion": "Av. Pellegrini 2050 - Rosario - Santa Fe",
+            "link_maps": "https://goo.gl/maps/ropjtbdDaE66cY4L9?coh=178571&entry=tt",
+            "horario": "lunes a viernes 9 a 18hs // Sabados 9 a 13hs",
+            "telefono": "0341-458965",
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.8592688264307!2d-60.65666072449893!3d-32.95472477358989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab6cfda14911%3A0x4b4dd99875680c25!2sAv.%20Pellegrini%202050%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1sen!2sar!4v1683066868113!5m2!1sen!2sar"
+        }
+]

@@ -1,0 +1,97 @@
+ /*SUCURSALES*/
+
+ .sucursales h2{
+    font-family: 'Permanent Marker';
+    font-weight: 100;
+    margin-left: 0.4rem;
+  }
+  
+  .section_sucursales{
+      display: grid;
+      margin: 1rem 0rem;
+      padding: 0.1rem;
+    }
+    
+    .item_sucursales{
+     justify-content: center;
+      width: 100%;
+      padding-left: 2.5rem;
+      grid-template-columns: repeat(auto-fit, 300px);
+      gap: 3rem;
+      display: none;
+      margin: 1rem 0;
+    }
+  
+    .sucursales_detalle,
+    .sucursales_iframe{
+      align-self: center;
+      justify-self: center;
+    }
+  
+    .span_sucursales{
+      background-color: rgba(1, 135, 253, 0.369);
+      color: #013668;
+      text-align: center;
+      border-top: 3px solid rgba(1, 135, 253, 0.369);
+      border-bottom: 3px solid rgba(1, 135, 253, 0.369);
+      font-family: 'Permanent Marker';
+      cursor: pointer;
+      margin: 0 0.8rem;
+      border-radius: 0.4rem;
+    }
+  
+    .span_sucursales.active,
+    .span_sucursales:hover{
+      background-color:rgba(8, 125, 228, 0.617);
+    }
+  
+    .span_sucursales:after{
+      content: '\002b'; /*simbolo +*/
+      float: right;
+      margin-right: 1rem;
+    }
+  
+    .span_sucursales.active:after{
+      content: '\02212'; /*simbolo -*/
+      float: right;
+      margin-right: 1rem;
+    }
+  
+    /*clase item_sucursales despues de clase active que sea display grid*/
+    .active + .item_sucursales
+    {
+      display: grid;
+      
+    }
+  
+    .sucursales_detalle a,
+    .sucursales_detalle p{
+      font-family: "Raleway";
+    }
+
+
+    @media screen and (max-width: 420px) {
+    
+      .item_sucursales{
+        padding: 0;
+      }
+    }
+
+
+    @media screen and (max-width: 768px) {
+
+        .item_sucursales{
+          gap: 0;
+        }
+
+        .sucursales_detalle{
+          font-size: 0.8rem;
+        justify-self: center;
+        margin-bottom: 0.7rem;
+        }
+    
+        .sucursales_iframe iframe{
+          width: 200px;
+          height: 200px;
+        }
+      }

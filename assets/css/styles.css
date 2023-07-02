@@ -1,0 +1,16 @@
+/*
+Ej. Googlefonts
+@import url();
+*/
+
+@import url('https://fonts.cdnfonts.com/css/z-arista');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/*orden cascada*/
+@import 'partials/general.css';
+@import 'partials/_header.css';
+@import 'partials/_main.css';
+@import 'partials/_admin.css';
+@import 'partials/_main_sucursales.css';
+@import 'partials/_main_quienesSomos.css';
+@import 'partials/_footer.css';
