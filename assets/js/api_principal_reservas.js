@@ -1,23 +1,19 @@
 /*Reserva*/
 let div_reserva = document.querySelector(".div_reserva");
 let span_suc = document.querySelector("span_sucursales");
-const url_paquetes = 'http://127.0.0.1:5000/api/paquetes/all'  
+const url_paquetes = "http://127.0.0.1:5000/api/paquetes/all";
 
 let cargarPaquetes = () => {
   fetch(url_paquetes)
     .then((respuesta) => respuesta.json()) //formato en q se obtiene la info osea la respuesta
     .then((data) => {
       let titulos = {};
-    
-      //console.log(data)
       //obtengo section del data
       data.map((element) => {
         //console.log(element[6])
         titulos[element[6]] = element[6];
       });
 
-      // console.log(typeof titulos)
-      //recorro el titulo que obtuve
       for (let clave in titulos) {
         // console.log(titulos[clave])
 
@@ -52,7 +48,14 @@ let cargarPaquetes = () => {
 cargarPaquetes();
 
 //Metodo 1//
-const crearLineaNueva = (section, imagen, cant_dias,cant_noches, precio, ciudad) => {
+const crearLineaNueva = (
+  section,
+  imagen,
+  cant_dias,
+  cant_noches,
+  precio,
+  ciudad
+) => {
   let div_item = document.createElement("div");
   div_item.classList.add("item");
   // let div_destacado = document.querySelector(".contenedor_destacado");
@@ -63,7 +66,7 @@ const crearLineaNueva = (section, imagen, cant_dias,cant_noches, precio, ciudad)
                         <p class="p_dias"> ${cant_dias}dias - ${cant_noches}noches</p>
                         <p class="p_precio">${precio}</p>
                         <p class="p_ciudad">${ciudad}</p>
-                        <a href="./pages/Reserva.html">Reserva</a>
+                        <a href="./pages/Reserva.html?destino=${ciudad}&cant_dias=${cant_dias}">Reserva</a>
                     </div>
                 </div>`;
 
@@ -71,9 +74,7 @@ const crearLineaNueva = (section, imagen, cant_dias,cant_noches, precio, ciudad)
 };
 
 const crearTitulo = (titulo) => {
-  //creo x cada titulo el div
   let div_titulo = document.createElement("div");
-
   div_titulo.innerHTML = "";
   div_titulo.innerHTML += `
  <div class="titulo_destacado">
@@ -81,6 +82,5 @@ const crearTitulo = (titulo) => {
  </div>
  <div class="contenedor_destacado" data-name="${titulo}">
  </div>`;
-
   return div_titulo;
 };

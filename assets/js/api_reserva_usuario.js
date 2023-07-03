@@ -1,8 +1,20 @@
+//Esta es la instruccion para tomar el id del URL detalle.html?id=<identificador>
+let URLid = window.location.search;
+let params = new URLSearchParams(URLid);
+let dias_total = parseInt(params.get("cant_dias"));
+let destino = params.get("destino");
+const input_destino = document.getElementById("destino");
+const input_cantDias = document.getElementById("cant_dias");
+input_destino.value = destino;
+input_cantDias.value = dias_total;
+//API create
+const urlCrearReserva = "http://127.0.0.1:5000/api/reservas/create";
 //formulario Reserva
 const formulario = document.getElementById("form");
 const inputs = document.getElementsByClassName("input");
 const submit = document.getElementById("submit");
 const modal = document.getElementById("modal");
+
 //limpiar Formulario
 function limpiarErrores() {
   //guardo en var errores todos los elementos de clase error
@@ -18,12 +30,10 @@ function limpiarErrores() {
 
 //validacion formulario
 function validar(formulario) {
- 
-	formulario.addEventListener("submit", (e) => {
+  formulario.addEventListener("submit", (e) => {
     limpiarErrores();
     e.preventDefault();
 
-	
     //validacion nombre
     if (formulario.nombre.value.length == 0) {
       document.getElementById("errorNombre").innerText = "Campo obligatorio";
@@ -143,22 +153,17 @@ function validar(formulario) {
     validarFechaReserva(formulario.fecha_reserva.value);
 
     //Validar Medio de Pago
-    if (formulario.m_p.value == "") {
+    if (formulario.medio_pago.value == "") {
       document.getElementById("errorPago").innerText =
         "Debe seleccionar un medio de pago";
       return false;
     }
-
-	modal.style.display= "flex";
-	modal.style.opacity = 1;
-	document.querySelector(".btn").addEventListener('click', ()=>{
-		window.location.href = "../index.html";
-	})
+    //guardamos la reserva si esta todo OK
+    reserva_cliente();
   });
 }
 
 validar(formulario);
-
 //Validar fechaNac si es mayor a 18
 const calcularEdad = (fechaNacimiento) => {
   const fechaActual = new Date();
@@ -216,4 +221,62 @@ const validarFechaReserva = (fechaReserva) => {
     formulario.fecha_reserva.focus();
     return false;
   }
+};
+
+const reserva_cliente = () => {
+  const nombre = document.getElementById("nombre");
+  const apellido = document.getElementById("apellido");
+  const email = document.getElementById("email");
+  const dni = document.getElementById("dni");
+  const fecha_nac = document.getElementById("fecha_nac");
+  const telefono = document.getElementById("telefono");
+  const direccion = document.getElementById("direccion");
+  const ciudad = document.getElementById("ciudad");
+  const provincia = document.getElementById("provincia");
+  const cp = document.getElementById("cp");
+  const cant_personas = document.getElementById("cantidad");
+  const fecha_reserva = document.getElementById("fecha_reserva");
+
+  //obtenemos radio checked*/
+  const medio_pago = document.querySelector('input[name="medio_pago"]:checked');
+
+  fetch(urlCrearReserva, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      nombre: nombre.value,
+      apellido: apellido.value,
+      email: email.value,
+      dni: dni.value,
+      fecha_nac: fecha_nac.value,
+      telefono: telefono.value,
+      direccion: direccion.value,
+      ciudad: ciudad.value,
+      provincia: provincia.value,
+      cp: cp.value,
+      cant_personas: cant_personas.value,
+      destino: destino,
+      fecha_reserva: fecha_reserva.value,
+      cantidad_dias: dias_total,
+      medio_pago: medio_pago.value,
+    }),
+  })
+    .then((response) => console.log(response.json()))
+    .then((data) => {
+      const nuevaReserva = [];
+      //agregamos al arreglo la data q creamos
+      nuevaReserva.push(data);
+
+      Swal.fire({
+        icon: "success",
+        title: "Reserva Guardada con exito",
+        showConfirmButton: false,
+        timer: 1800,
+      })
+
+        .then((response) => (window.location.href = "../"))
+        .catch((error) => console.log(error));
+    });
 };

@@ -64,6 +64,7 @@
      position: relative;
      display: flex;
      flex-direction: row !important;
+     border: none !important;
  }
  
  .card img{
