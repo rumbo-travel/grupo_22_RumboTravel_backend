@@ -50,6 +50,10 @@
   input[type=submit]:hover {
     background-color:  rgba(1, 135, 253, 0.369);
   }
+
+  #submit{
+    margin-top: 1rem !important;
+   }
   
   .container_footer {
     border-radius: 50px;

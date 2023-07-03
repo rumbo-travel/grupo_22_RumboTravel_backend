@@ -88,3 +88,7 @@ tbody, td, tfoot, th, thead,tr{
 .btn-close{
     color: white !important;
 }
+
+.ocultar{
+    display: none;
+}

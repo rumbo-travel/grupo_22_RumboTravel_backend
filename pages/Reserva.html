@@ -70,7 +70,21 @@
     </div>
 
     <div class="container col-md-9 p-5 mt-4">
+      <form id="form" class="row g-4 mt-1 justify-content-left" novalidate>
+        <div class="titulo bg-secondary text-white py-2 fw-bold fst-italic">Paquete Adquirido</div>
 
+        <div class="col-md-5">
+          <div class="form-group">
+            <label for="destino" class="form-label">Destino</label>
+            <input type="text" class="form-control input" id="destino" readonly>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="form-group">
+            <label for="cant_dias" class="form-label">Cantidad de Dias</label>
+            <input type="text" class="form-control input" id="cant_dias" readonly>
+          </div>
+        </div>
 
       <form id="form" class="row g-4 mt-1 justify-content-left" novalidate>
         <div class="titulo bg-secondary text-white py-2 fw-bold fst-italic">Datos Personales</div>
@@ -148,7 +162,7 @@
         <div class="col-md-7">
           <div class="form-group">
             <label for="cantidad" class="form-label">Cantidad de personas para la reserva</label>
-            <select class="form-select input" id="cantidad" required>
+            <select class="form-select input " id="cantidad" required>
               <option selected disabled value="">...</option>
               <option>1</option>
               <option>2</option>
@@ -172,20 +186,20 @@
         <label for="m_p">Seleccione Medio de Pago:</label>
 
         <div class="col-md-4">
-          <input class="form-check-input" type="radio" name="m_p" id="pagomp" value="pagomp" />
+          <input class="form-check-input radio" type="radio" name="medio_pago" id="pagomp" value="Mercado Pago" />
           <label class="form-check-label" for="pagomp">
             MERCADO PAGO
           </label>
         </div>
 
         <div class="col-md-4">
-          <input class="form-check-input" type="radio" name="m_p" id="debito" value="debito" />
+          <input class="form-check-input radio" type="radio" name="medio_pago" id="debito" value="Tarjeta de Debito" />
           <label class="form-check-label" for="debito">
             TARJETA DE DEBITO
           </label>
         </div>
         <div class="col-md-4">
-          <input class="form-check-input" type="radio" name="m_p" id="credito" value="credito" />
+          <input class="form-check-input radio" type="radio" name="medio_pago" id="credito" value="Tarjeta de Credito" />
           <label class="form-check-label" for="credito">
             TARJETA DE CREDITO
           </label>
@@ -199,20 +213,16 @@
     </div>
     </form>
     </div>
-
-
   </main>
-
-
   <footer>
-
   </footer>
-  <script src="../assets/js/validacion.js"></script>
-  <script src="../assets/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../assets/js/api_reserva_usuario.js"></script> 
+  <script src="../assets/js/app.js" ></script>
+ <!--<script src="../assets/js/api_reserva_usuario.js"></script>-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
   <script src=""></script>
 </body>
-
 </html>
