@@ -8,7 +8,7 @@ const input_cantDias = document.getElementById("cant_dias");
 input_destino.value = destino;
 input_cantDias.value = dias_total;
 //API create
-const urlCrearReserva = "http://127.0.0.1:5000/api/reservas/create";
+const urlCrearReserva = "http://127.0.0.1:5000/api/reserva";
 //formulario Reserva
 const formulario = document.getElementById("form");
 const inputs = document.getElementsByClassName("input");
