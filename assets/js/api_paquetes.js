@@ -1,6 +1,6 @@
 //PAQUETES
-const url = "http://127.0.0.1:5000/api/paquetes/";
-const url_eliminar = "http://127.0.0.1:5000/api/paquetes/eliminar/";
+const url = "http://127.0.0.1:5000/api/paquetes";
+const url_eliminar = "http://127.0.0.1:5000/api/paquete/";
 
 const contenedor = document.querySelector("tbody");
 let resultados = "";
@@ -15,17 +15,17 @@ const mostrar = (paquetes) => {
   // {
   paquetes.forEach((paquete) => {
     resultados += `<tr>
-                                <td class="ocultar">${paquete[0]}</td>
+                                <td class="ocultar">${paquete.id}</td>
                                 <td>${cont++}</td>
-                                <td>${paquete[1]}</td>
-                                <td>${paquete[2]}</td>
-                                <td>${paquete[3]}</td>
-                                <td>${paquete[4]}</td>
+                                <td>${paquete.destino}</td>
+                                <td>${paquete.cant_dias}</td>
+                                <td>${paquete.cant_noches}</td>
+                                <td>${paquete.destacado}</td>
                               
                                
                                 <td>
                                <a class="btnEditar btn btn-primary me-1" href="./paquete_modificacion.html?id=${
-                                 paquete[0]
+                                 paquete.id
                                }"></a>
                                 <button class="btnBorrar btn btn-danger"></button>
                                 </td>

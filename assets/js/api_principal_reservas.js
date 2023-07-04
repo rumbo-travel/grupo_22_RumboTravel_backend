@@ -1,7 +1,7 @@
 /*Reserva*/
 let div_reserva = document.querySelector(".div_reserva");
 let span_suc = document.querySelector("span_sucursales");
-const url_paquetes = "http://127.0.0.1:5000/api/paquetes/all";
+const url_paquetes = "http://127.0.0.1:5000/api/paquetes";
 
 let cargarPaquetes = () => {
   fetch(url_paquetes)
@@ -11,7 +11,7 @@ let cargarPaquetes = () => {
       //obtengo section del data
       data.map((element) => {
         //console.log(element[6])
-        titulos[element[6]] = element[6];
+        titulos[element.destacado] = element.destacado;
       });
 
       for (let clave in titulos) {
@@ -27,15 +27,15 @@ let cargarPaquetes = () => {
 
         //recorro todo el data y si es igual al titulo lo inserto dentro
         data.filter((elemento) => {
-          if (elemento[6] === titulos[clave]) {
+          if (elemento.destacado === titulos[clave]) {
             //  console.log(elemento)
             let linea = crearLineaNueva(
-              elemento[6],
-              elemento[5],
-              elemento[2],
-              elemento[3],
-              elemento[4],
-              elemento[1]
+              elemento.destacado,
+              elemento.imagen,
+              elemento.cant_dias,
+              elemento.cant_noches,
+              elemento.precio,
+              elemento.destino
             );
             div_contenedor.appendChild(linea);
           }

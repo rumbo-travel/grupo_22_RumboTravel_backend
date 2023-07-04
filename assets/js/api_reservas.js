@@ -1,6 +1,6 @@
 //Reserva
 const url = "http://127.0.0.1:5000/api/reservas";
-const url_eliminar = "http://127.0.0.1:5000/api/reservas/eliminar/";
+const urlEliminar = "http://127.0.0.1:5000/api/reserva/";
 const contenedor = document.querySelector("tbody");
 let resultados = "";
 
@@ -14,15 +14,15 @@ const mostrar = (reservas) => {
   reservas.forEach((reserva) => {
     resultados += `<tr>
                                 <td>${cont++}</td>
-                                <td>${reserva[5]}</td>
-                                <td>${reserva[3]}</td>
-                                <td>${reserva[1]}</td>
-                                <td>${reserva[2]}</td>
-                                <td>${parseDate(reserva[4])}</td>
-                                <td>${parseDate(reserva[6])}</td>
+                                <td>${reserva.destino}</td>
+                                <td>${reserva.dni}</td>
+                                <td>${reserva.nombre}</td>
+                                <td>${reserva.apellido}</td>
+                                <td>${parseDate(reserva.fecha_reserva)}</td>
+                                <td>${parseDate(reserva.fecha_inicio)}</td>
                                 <td>
                                 <a class="btnEditar btn btn-primary me-1" href="./reserva_modificacion.html?id=${
-                                  reserva[0]
+                                  reserva.id
                                 }"></a>
                                 <button class="btnBorrar btn btn-danger"></button>
                                 </td>
@@ -98,7 +98,7 @@ on(document, "click", ".btnBorrar", (e) => {
     confirmButtonText: "Borrar",
   }).then((result) => {
     if (result.isConfirmed) {
-      fetch(url_eliminar + id, {
+      fetch(urlEliminar + id, {
         method: "DELETE",
       })
         .then(
