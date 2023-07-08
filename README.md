@@ -1,4 +1,4 @@
-#grupo_22_RumboTravel
+#grupo_22_RumboTravel - Backend
 
 ## RUMBO TRAVEL
 
@@ -22,7 +22,7 @@ https://www.despegar.com.ar/
 https://almundo.com.ar/
 
 ## Github repo
-Repositorio [link] (https://github.com/rumbo-travel/grupo_22_RumboTravel.git)
+Repositorio [link] (https://github.com/rumbo-travel/grupo_22_RumboTravel_backend)
 
 
 ## Tech Stack
@@ -34,3 +34,4 @@ Repositorio [link] (https://github.com/rumbo-travel/grupo_22_RumboTravel.git)
 **api_sucursales
 **Validacion JavaScript formulario_ comentario & formulario_reserva
 ** VUE - formulario-Comentarios
+**api python - flask
