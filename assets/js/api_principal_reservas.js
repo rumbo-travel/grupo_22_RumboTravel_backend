@@ -13,7 +13,6 @@ let cargarPaquetes = () => {
         //console.log(element[6])
         titulos[element.destacado] = element.destacado;
       });
-
       for (let clave in titulos) {
         // console.log(titulos[clave])
 
@@ -57,7 +56,22 @@ const crearLineaNueva = (
   ciudad
 ) => {
   let div_item = document.createElement("div");
+  let http = "http"
   div_item.classList.add("item");
+  if(imagen.includes(http))
+  {
+    div_item.innerHTML += `
+    <div class="item">
+        <div class="card">
+            <img src="${imagen}" alt="">
+            <p class="p_dias"> ${cant_dias}dias - ${cant_noches}noches</p>
+            <p class="p_precio">${precio}</p>
+            <p class="p_ciudad">${ciudad}</p>
+            <a href="./pages/Reserva.html?destino=${ciudad}&cant_dias=${cant_dias}">Reserva</a>
+        </div>
+    </div>`;
+return div_item;
+  }else{ 
   // let div_destacado = document.querySelector(".contenedor_destacado");
   div_item.innerHTML += `
                 <div class="item">
@@ -69,10 +83,9 @@ const crearLineaNueva = (
                         <a href="./pages/Reserva.html?destino=${ciudad}&cant_dias=${cant_dias}">Reserva</a>
                     </div>
                 </div>`;
-
   return div_item;
 };
-
+}
 const crearTitulo = (titulo) => {
   let div_titulo = document.createElement("div");
   div_titulo.innerHTML = "";

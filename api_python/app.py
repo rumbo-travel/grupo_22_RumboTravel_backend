@@ -199,16 +199,16 @@ def update_reserva(id):
     reserva.apellido = request.json['apellido']
     reserva.email = request.json['email']
     reserva.dni = request.json['dni']
-    reserva.fecha_nac = request.json['fecha_nac']
+    #reserva.fecha_nac = request.json['fecha_nac']
     reserva.telefono = request.json['telefono']
-    reserva.direccion = request.json['direccion']
-    reserva.ciudad = request.json['ciudad']
-    reserva.provincia = request.json['provincia']
-    reserva.cp = request.json['cp']
+    #reserva.direccion = request.json['direccion']
+   # reserva.ciudad = request.json['ciudad']
+    #reserva.provincia = request.json['provincia']
+    #reserva.cp = request.json['cp']
     reserva.cant_personas = request.json['cant_personas']
-    reserva.fecha_reserva = request.json['fecha_reserva']
+    #reserva.fecha_reserva = date.today()
     reserva.destino = request.json['destino']
-    reserva.fecha_inicio = request.json['fecha_inicio']
+    reserva.fecha_inicio = request.json['fecha_reserva']
     reserva.cant_dias = request.json['cant_dias']
     reserva.medio_pago= request.json['medio_pago']
 
@@ -225,6 +225,11 @@ def delete_reserva(id): #BORRADO LOGICO
     db.session.commit()
     return reserva_schema.jsonify(reserva) #retorna la reserva eliminada
     
+def pagina_no_encontrada(error):
+    return "<h1>Página no encontrada</h1>", 404
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
+      # Error handlers
+    app.register_error_handler(404, pagina_no_encontrada)
+    app.run()

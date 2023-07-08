@@ -18,13 +18,13 @@ const mostrar = (reservas) => {
                                 <td>${reserva.dni}</td>
                                 <td>${reserva.nombre}</td>
                                 <td>${reserva.apellido}</td>
-                                <td>${parseDate(reserva.fecha_reserva)}</td>
-                                <td>${parseDate(reserva.fecha_inicio)}</td>
+                                <td>${parseDate(reserva.fecha_inicio)}</td>                                
+                                <td>${reserva.cant_dias}</td>
                                 <td>
                                 <a class="btnEditar btn btn-primary me-1" href="./reserva_modificacion.html?id=${
                                   reserva.id
-                                }"></a>
-                                <button class="btnBorrar btn btn-danger"></button>
+                                }" title="Editar"></a>
+                                <button class="btnBorrar btn btn-danger" title="Eliminar"></button>
                                 </td>
                            </tr>
                         `;
