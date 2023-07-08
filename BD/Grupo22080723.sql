@@ -28,10 +28,10 @@ CREATE TABLE `paquetes` (
   `cant_dias` int NOT NULL,
   `cant_noches` int NOT NULL,
   `precio` int NOT NULL,
-  `imagen` varchar(45) NOT NULL,
+  `imagen` varchar(300) NOT NULL,
   `destacado` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `paquetes` (
 
 LOCK TABLES `paquetes` WRITE;
 /*!40000 ALTER TABLE `paquetes` DISABLE KEYS */;
-INSERT INTO `paquetes` VALUES (1,'Bariloche',8,6,70000,'bariloche.jpg','ARGENTINA'),(2,'Cataratas',5,4,50000,'cataratas-misiones.jpg','ARGENTINA'),(3,'Mendoza',8,6,55000,'mendoza.jpg','ARGENTINA'),(4,'Cordoba',10,8,60000,'Villa general belgrano - cordoba.jpg','ARGENTINA'),(5,'Bangkok',10,7,3000,'Bangkok.jpg','ASIA'),(6,'Tokio',9,6,3200,'Tokio.jpg','ASIA'),(7,'Estambul',8,6,2800,'Estambul.jpeg','ASIA'),(8,'Tokio',9,6,3200,'Tokio.jpg','ASIA'),(9,'Amsterdam',10,8,3000,'Amsterdan.jpg','EUROPA'),(10,'Benidorm',7,5,2800,'Benidorm.jpg','EUROPA'),(11,'Londres',6,4,3000,'Londres.jpg','EUROPA'),(12,'Paris',8,6,3300,'paris.jpg','EUROPA'),(13,'Miami - Florida',7,6,2300,'Miami-Florida.jpg','AMERICA'),(14,'Punta Cana',8,6,3000,'puntaCana.jpg','AMERICA'),(21,'Rio de Janiero',10,9,1800,'RioDeJaneiro.jpg','AMERICA'),(22,'Cancun',9,8,2200,'cancun.jpg','AMERICA'),(23,'Cancun',13,12,4000,'cancun.jpg','AMERICA');
+INSERT INTO `paquetes` VALUES (1,'Bariloche',8,6,70000,'bariloche.jpg','ARGENTINA'),(2,'Cataratas',5,4,50000,'cataratas-misiones.jpg','ARGENTINA'),(3,'Mendoza',8,6,55000,'mendoza.jpg','ARGENTINA'),(4,'Cordoba',10,8,60000,'Villa general belgrano - cordoba.jpg','ARGENTINA'),(5,'Bangkok',10,7,3000,'Bangkok.jpg','ASIA'),(6,'Tokio',9,6,3200,'Tokio.jpg','ASIA'),(7,'Estambul',8,6,2800,'Estambul.jpeg','ASIA'),(8,'Tokio',9,6,3200,'Tokio.jpg','ASIA'),(9,'Amsterdam',10,8,3000,'Amsterdan.jpg','EUROPA'),(10,'Benidorm',7,5,2800,'Benidorm.jpg','EUROPA'),(11,'Londres',6,4,3000,'Londres.jpg','EUROPA'),(12,'Paris',8,6,3300,'paris.jpg','EUROPA'),(13,'Miami - Florida',7,6,2300,'Miami-Florida.jpg','AMERICA'),(14,'Punta Cana',8,6,3000,'puntaCana.jpg','AMERICA'),(21,'Rio de Janiero',10,9,1800,'RioDeJaneiro.jpg','AMERICA'),(22,'Cancun',9,8,2200,'cancun.jpg','AMERICA'),(25,'Mendoza',8,7,50000,'https://media.istockphoto.com/id/1303686899/es/foto/paisaje-de-colores-en-purmamarca-jujuy-argentina.jpg?s=612x612&w=0&k=20&c=wQtVfID95eoE-w4o6TK_pe0JdplKmWGFEkLd2uyLgPE=','ARGENTINA'),(26,'Jujuy',8,7,30000,'https://media.istockphoto.com/id/1303686899/es/foto/paisaje-de-colores-en-purmamarca-jujuy-argentina.jpg?s=612x612&w=0&k=20&c=wQtVfID95eoE-w4o6TK_pe0JdplKmWGFEkLd2uyLgPE=','ARGENTINA');
 /*!40000 ALTER TABLE `paquetes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -70,7 +70,7 @@ CREATE TABLE `reservas` (
   `cant_dias` int DEFAULT NULL,
   `medio_pago` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -79,7 +79,7 @@ CREATE TABLE `reservas` (
 
 LOCK TABLES `reservas` WRITE;
 /*!40000 ALTER TABLE `reservas` DISABLE KEYS */;
-INSERT INTO `reservas` VALUES (1,'Juan','Gomez','juan@gmail.com',30564123,'1983-11-20',1165287568,'calle rivadavia 500','CABA','Buenos Aires','1002',2,'2023-02-07','Bariloche','2023-08-10',8,'MERCADO PAGO'),(2,'Marta','Perez','marta@gmail.com',25000114,'1978-01-23',1156265410,'Salvador Del Carril 1863','Santa Fe','Santa Fe','3000',2,'2023-03-15','Mendoza','2023-10-01',8,'MERCADO PAGO'),(3,'Vanesa','Tozcano','vanesa@gmail.com',23456000,'2005-06-01',11111111,'calle 7','caba','Buenos Aires','3000',1,'2023-07-03','Cancun','2023-08-06',10,'Mercado Pago'),(4,'Eugenia','Pepito','eugenia@gmail.com',34567890,'2005-05-30',11111114,'calle Rivadavia','caba','Buenos Aires','4400',3,'2023-07-03','Miami - Florida','2024-01-04',7,'Tarjeta de Credito'),(7,'sebastian','Gomez','aaa@cod.com',28254555,'2005-05-31',11111111,'calle Rivadavia','caba','Buenos Aires','4400',2,'2023-07-04','Cancun','2023-07-03',13,'Tarjeta de Debito');
+INSERT INTO `reservas` VALUES (1,'Juan','Gomez','juan@gmail.com',30564123,'1983-11-20',1165287568,'calle rivadavia 500','CABA','Buenos Aires','1002',2,'2023-02-07','Bariloche','2023-08-10',8,'MERCADO PAGO'),(2,'Marta','Perez','marta@gmail.com',25000114,'1978-01-23',1156265410,'Salvador Del Carril 1863','Santa Fe','Santa Fe','3000',2,'2023-03-15','Mendoza','2023-10-01',8,'MERCADO PAGO'),(3,'Vanesa','Tozcano','vanesa@gmail.com',23456000,'2005-06-01',11111111,'calle 7','caba','Buenos Aires','3000',1,'2023-07-03','Cancun','2023-08-06',10,'MERCADO PAGO'),(4,'Eugenia','Pepito','eugenia@gmail.com',34567890,'2005-05-30',11111114,'calle Rivadavia','caba','Buenos Aires','4400',4,'2023-07-03','Miami - Florida','2024-01-04',7,'TARJETA DE DEBITO'),(8,'Josefina','Peralta','josefina@gmail.com',35478965,'2005-05-30',1123456789,'calle florida','caba','Buenos Aires','1884',2,'2023-07-05','Amsterdam','2023-07-28',10,'MERCADO PAGO'),(9,'Eugenia','Toledo','eugenia@gmail.com',23456000,'2005-05-31',11111111,'calle Rivadavia','caba','Buenos Aires','4400',4,'2023-07-08','Punta Cana','2023-11-24',8,'TARJETA DE DEBITO');
 /*!40000 ALTER TABLE `reservas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -92,4 +92,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-04 23:12:14
+-- Dump completed on 2023-07-08 19:45:18
