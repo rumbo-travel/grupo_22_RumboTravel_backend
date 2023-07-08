@@ -24,10 +24,10 @@ const mostrar = (paquetes) => {
                               
                                
                                 <td>
-                               <a class="btnEditar btn btn-primary me-1" href="./paquete_modificacion.html?id=${
+                               <a class="btnEditar btn btn-primary me-1" href="./alta_paquetes.html?id=${
                                  paquete.id
-                               }"></a>
-                                <button class="btnBorrar btn btn-danger"></button>
+                               }" title="Modificar"></a>
+                                <button class="btnBorrar btn btn-danger"title="Eliminar"></button>
                                 </td>
                            </tr>
                         `;

@@ -260,7 +260,7 @@ const reserva_cliente = () => {
       destino: destino,
       fecha_reserva: fecha_reserva.value,
       cantidad_dias: dias_total,
-      medio_pago: medio_pago.value,
+      medio_pago: medio_pago.value.toUpperCase(),
     }),
   })
     .then((response) => console.log(response.json()))
