@@ -2,8 +2,8 @@
 const URLid = window.location.search;
 const params = new URLSearchParams(URLid);
 const id = parseInt(params.get("id"));
-const urlPaquete = "http://julieta.pythonanywhere.com/api/paquete/";
-const urlPaqueteAlta = "http://julieta.pythonanywhere.com/api/paquete";
+const urlPaquete = "https://julieta.pythonanywhere.com/api/paquete/";
+const urlPaqueteAlta = "https://julieta.pythonanywhere.com/api/paquete";
 const input_destino = document.getElementById("destino")
 const input_cant_dias = document.getElementById("cant_dias")
 const input_cant_noches = document.getElementById("cant_noches")

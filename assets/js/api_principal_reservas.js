@@ -1,7 +1,7 @@
 /*Reserva*/
 let div_reserva = document.querySelector(".div_reserva");
 let span_suc = document.querySelector("span_sucursales");
-const url_paquetes = "http://julieta.pythonanywhere.com/api/paquetes";
+const url_paquetes = "https://julieta.pythonanywhere.com/api/paquetes";
 
 let cargarPaquetes = () => {
   fetch(url_paquetes)

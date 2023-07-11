@@ -1,6 +1,6 @@
 //Reserva
-const url = "http://julieta.pythonanywhere.com/api/reservas";
-const urlEliminar = "http://julieta.pythonanywhere.com/api/reserva/";
+const url = "https://julieta.pythonanywhere.com/api/reservas";
+const urlEliminar = "https://julieta.pythonanywhere.com/api/reserva/";
 const contenedor = document.querySelector("tbody");
 let resultados = "";
 

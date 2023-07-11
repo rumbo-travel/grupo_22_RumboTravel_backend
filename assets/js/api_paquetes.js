@@ -1,6 +1,6 @@
 //PAQUETES
-const url = "http://julieta.pythonanywhere.com/api/paquetes";
-const url_eliminar = "http://julieta.pythonanywhere.com/api/paquete/";
+const url = "https://julieta.pythonanywhere.com/api/paquetes";
+const url_eliminar = "https://julieta.pythonanywhere.com/api/paquete/";
 
 const contenedor = document.querySelector("tbody");
 let resultados = "";
