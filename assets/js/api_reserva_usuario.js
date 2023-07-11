@@ -8,7 +8,7 @@ const input_cantDias = document.getElementById("cant_dias");
 input_destino.value = destino;
 input_cantDias.value = dias_total;
 //API create
-const urlCrearReserva = "http://julieta.pythonanywhere.com/api/reserva";
+const urlCrearReserva = "https://julieta.pythonanywhere.com/api/reserva";
 //formulario Reserva
 const formulario = document.getElementById("form");
 const inputs = document.getElementsByClassName("input");
