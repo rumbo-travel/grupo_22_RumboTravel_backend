@@ -1,6 +1,6 @@
 //PAQUETES
-const url = "http://127.0.0.1:5000/api/paquetes";
-const url_eliminar = "http://127.0.0.1:5000/api/paquete/";
+const url = "http://julieta.pythonanywhere.com/api/paquetes";
+const url_eliminar = "http://julieta.pythonanywhere.com/api/paquete/";
 
 const contenedor = document.querySelector("tbody");
 let resultados = "";

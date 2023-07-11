@@ -1,6 +1,6 @@
 //Reserva
-const url = "http://127.0.0.1:5000/api/reservas";
-const urlEliminar = "http://127.0.0.1:5000/api/reserva/";
+const url = "http://julieta.pythonanywhere.com/api/reservas";
+const urlEliminar = "http://julieta.pythonanywhere.com/api/reserva/";
 const contenedor = document.querySelector("tbody");
 let resultados = "";
 

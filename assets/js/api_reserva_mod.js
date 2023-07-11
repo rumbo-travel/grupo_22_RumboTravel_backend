@@ -2,7 +2,7 @@
 const URLid = window.location.search;
 const params = new URLSearchParams(URLid);
 const id = parseInt(params.get("id"));
-const urlReserva = "http://127.0.0.1:5000/api/reserva/";
+const urlReserva = "http://julieta.pythonanywhere.com/api/reserva/";
 const input_nombre = document.getElementById("nombre")
 const input_apellido = document.getElementById("apellido")
 const input_email = document.getElementById("email")
