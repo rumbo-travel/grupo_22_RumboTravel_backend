@@ -29,6 +29,23 @@ tbody, td, tfoot, th, thead,tr{
     border-top: 2px solid #0a4f70 !important;
 }
 
+.btnPanel{
+    background-image: url(../../icons/pencil.svg);
+    width: 42px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.1rem;
+    background-color: rgb(54, 48, 92);
+    align-self: center;
+    border-radius: 1rem;
+    
+}
+
+.btnPanel:hover{
+    opacity: 0.8;
+}
+
 .btnEditar{
     background-image: url(../../icons/pencil.svg);
     width: 42px;
